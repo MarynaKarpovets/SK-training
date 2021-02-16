@@ -1,26 +1,29 @@
+:root {
+    --size-div: 600px;
+}
+
+
+
 div{
+    font-family: 'Montserrat', sans-serif;
     background-color: aquamarine;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-div:hover{
-    background-color: red;
-}
-.box{
-    width: 150px;
-    height: 150px;
-    margin: 5px;
+    width: var(--size-div);
+    overflow: visible;
 }
 
-#item, p{
-    color: brown;
+p{
+width: 200px;
 }
 
-div p{
-    background-color: yellow;
-    color: blue;
+div img{
+width: var(--size-div);
+height: 200px;
+object-fit: cover;
 }
 
-span{
-    background-color: red;
+@media only screen and (max-width: 600px) {
+
+    div{
+        background-color: chartreuse;
+    }
 }

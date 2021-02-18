@@ -1,26 +1,80 @@
 div{
-    background-color: aquamarine;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    border: 5px solid grey;
+    
 }
-div:hover{
-    background-color: red;
+.shadow{
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px red, 0 0 0 20px yellow;
 }
+
+.text{
+    font-size: 48px;
+    text-shadow: 5px 5px 5px green;
+}
+
+.gradient{
+    background-image: linear-gradient(to top right, red, yellow, purple);
+    transform-origin: top center;
+    transform: rotate(45deg);
+}
+
 .box{
-    width: 150px;
-    height: 150px;
-    margin: 5px;
+    transform:translat
+    e(100px, 100px) rotate(90deg) scale(1, 1) skew(30deg)
 }
 
-#item, p{
-    color: brown;
+.box1{
+    margin: 200px;
+    width: 400px;
+    height: 200px;
+    border: 1px solid blue;
+    background-image: linear-gradient(to top right, yellow, grey, blue);
+    transform-origin: top center;
+    transform: rotate(-25deg) 
+
+}
+.anime{
+    transition: width 3s; 
 }
 
-div p{
-    background-color: yellow;
-    color: blue;
+.anime:hover{
+    width: 400px;
 }
 
-span{
-    background-color: red;
+@keyframes clr{
+    from{
+        background: red;
+    } 
+    to{
+       background: greenyellow;
+    }
+}
+
+@keyframes clr2{
+    0%{
+        background: rgb(167, 17, 17);
+    }
+    25%{
+        background: rgb(83, 5, 5);
+    }
+    50%{
+        background: rgb(41, 2, 2);
+    }
+    100%{
+        background: rgb(151, 22, 22);
+    }
+    }
+
+.animation{
+    animation-name: clr2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+img{
+    filter: grayscale(100%);
 }

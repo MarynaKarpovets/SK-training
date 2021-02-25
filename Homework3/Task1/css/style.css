@@ -1,0 +1,19 @@
+ 
+@keyframes box{
+    from{
+        transform: rotate(0deg);
+    } 
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.animation{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(28, 28, 94);
+    animation-name: box;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

@@ -1,4 +1,20 @@
+$size-text: 18px;
+$color-text: grey;
+
 div{
     background-color: aquamarine;
-    color: brown;
+    color: $color-text;
+    // font-size: $size-text;
+    font:{
+        family: sanf-serif, Arial;
+        size: 10px;
+    }
+}
+
+nav{
+    position: fixed;
+    top: 10px;
+    ul{
+        background-color: $color-text;
+    }
 }

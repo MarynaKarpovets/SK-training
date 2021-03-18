@@ -1,3 +1,11 @@
 div {
   background-color: aquamarine;
-  color: brown; }
+  color: grey;
+  font-family: sanf-serif, Arial;
+  font-size: 10px; }
+
+nav {
+  position: fixed;
+  top: 10px; }
+  nav ul {
+    background-color: grey; }

@@ -3,3 +3,5 @@
 video
 log
 example.doc
+node_modules
+*.log

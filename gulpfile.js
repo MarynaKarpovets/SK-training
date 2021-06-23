@@ -73,5 +73,7 @@ exports.styles = styles;
 exports.browsersync = browsersync;
 // exports.cleandist = cleandist;
 
-exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+// exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+
+exports.build = series(cleandist, styles, buildcopy);
 exports.default = parallel(browsersync, startWatch);

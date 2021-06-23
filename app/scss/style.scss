@@ -1,16 +1,9 @@
-@function setcolor($clr){
-    @return $clr;
-}
-
-div{
-    background-color: setcolor(grey);
-}
-
 .box{
-    // background-color: yellow;
-    //my description 
+    background-color: aquamarine;
+    height: 130px;
+    border: 1px solid grey;
 }
-
-@for $i from 1 through 12 {
-    .cox-lg-#{$i} { width: 50 + $i;}
+.item{
+    border: 4px solid yellow !important;
+    // border-radius: 50% !important;
 }
